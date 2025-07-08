@@ -1,0 +1,247 @@
+/*  ───  Google Fonts  ─────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;500&display=swap");
+
+/*  ───  Base  ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Lato", Arial, sans-serif;
+  color: #14213d;                     /* deep twilight blue text   */
+  /* soft diagonal fabric‑like pattern */
+  background: repeating-linear-gradient(
+      135deg,
+      #fafafa 0 40px,
+      #f4f4f6 40px 80px
+    ),
+    radial-gradient(circle at top right, #e7effd 0%, #ffffff 60%);
+}
+
+/*  ───  Auth Shell  ───────────────────────────────────────── */
+.auth-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  min-height: 500px;
+  background: #ffffff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 10px 35px rgba(20, 33, 61, 0.1);
+  overflow: hidden;
+}
+
+/* Accent bar */
+.auth-accent {
+  width: 12px;
+  background: linear-gradient(180deg, #ff9a8b 0%, #ff6f61 100%);
+  border-radius: 20px 0 0 20px;
+}
+
+/*  ───  Inside Content  ───────────────────────────────────── */
+.auth-content {
+  flex: 1;
+  padding: 52px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo */
+.auth-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.auth-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #14213d;                 /* dark blue box            */
+  color: #ff6f61;                      /* coral camera icon        */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.auth-logo-text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Headline */
+.auth-title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #14213d;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+/*  ───  Form  ─────────────────────────────────────────────── */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  background: #fafafa;
+  border: 2px solid #e2e5ee;
+  border-radius: 8px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 0 3px #ff6f6133;
+}
+
+/* show / hide password eye */
+.show-password-toggle {
+  position: absolute;
+  top: 38px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  color: #ff6f61;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.show-password-toggle:hover {
+  transform: scale(1.15);
+}
+
+/* remember / forgot row */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  color: #ff6f61;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: #14213d;
+}
+
+/*  ───  Buttons  ──────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #ff6f61;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 111, 97, 0.32);
+  transition: background 0.25s ease, transform 0.1s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  background: #ff3f2f;
+  box-shadow: 0 6px 20px rgba(255, 63, 47, 0.38);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/*  ───  Footer  ───────────────────────────────────────────── */
+.auth-footer {
+  margin-top: 32px;
+  font-size: 0.95rem;
+  color: #7b7e8d;
+}
+
+.auth-footer a {
+  color: #ff6f61;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+
+.auth-footer a:hover {
+  color: #14213d;
+}
+
+/*  ───  Responsive  ───────────────────────────────────────── */
+@media (max-width: 600px) {
+  .auth-container {
+    flex-direction: column;
+    max-width: 90%;
+    border-radius: 0 0 20px 20px;
+  }
+  .auth-accent {
+    width: 100%;
+    height: 10px;
+    border-radius: 20px 20px 0 0;
+  }
+  .auth-content {
+    padding: 36px 24px 28px;
+  }
+}

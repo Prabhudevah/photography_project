@@ -1,0 +1,184 @@
+body {
+  background: #f7f8fa;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #222;
+}
+
+.about-hero {
+  background: linear-gradient(90deg, #e67e22 0%, #f5b041 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* === About Layout & Spacing === */
+.about-section {
+  padding: 64px 0 48px 0;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.about-image {
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(24, 24, 24, 0.07);
+  margin-bottom: 0;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-text {
+  flex: 2 1 340px;
+  min-width: 260px;
+  max-width: 600px;
+  padding: 0 12px;
+}
+.about-text h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #181818;
+}
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 18px;
+}
+.about-cta {
+  margin-top: 32px;
+}
+.btn {
+  margin-top: 8px;
+}
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about-image,
+  .about-text {
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  .about-section {
+    padding: 32px 0 24px 0;
+  }
+  .about-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .about-content {
+    gap: 12px;
+  }
+}
+
+.about-story,
+.about-mission,
+.about-profile {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(230, 126, 34, 0.07);
+  padding: 36px 24px 28px 24px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.about-story h2,
+.about-mission h2,
+.about-profile h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.about-story p,
+.about-mission p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: #f5b041;
+  color: #fff;
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #e67e22 60%, #f5b041 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(230, 126, 34, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #f5b041 0%, #e67e22 100%);
+  box-shadow: 0 4px 16px rgba(230, 126, 34, 0.13);
+}
+
+@media (max-width: 700px) {
+  .about-title {
+    font-size: 1.7rem;
+  }
+  .about-section {
+    padding: 30px 0 20px 0;
+  }
+  .about-story,
+  .about-mission,
+  .about-profile {
+    padding: 18px 8px 14px 8px;
+  }
+  .skills-list li {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

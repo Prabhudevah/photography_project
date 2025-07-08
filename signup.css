@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;500&display=swap");
+body {
+  background: repeating-linear-gradient(135deg, #fff 0 40px, #f7f7f7 40px 80px);
+  min-height: 100vh;
+  font-family: "Lato", Arial, sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+.auth-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.auth-container {
+  display: flex;
+  background: #fff;
+  border-radius: 0 18px 18px 0;
+  box-shadow: 0 8px 32px rgba(24, 24, 24, 0.13);
+  max-width: 420px;
+  width: 100%;
+  margin: 48px 0;
+  text-align: left;
+  border: none;
+  position: relative;
+  min-height: 520px;
+}
+.auth-accent {
+  width: 10px;
+  background: #ffd600;
+  border-radius: 18px 0 0 18px;
+  min-height: 100%;
+  display: block;
+}
+.auth-content {
+  flex: 1;
+  padding: 48px 36px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.auth-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.auth-logo-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd600;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.auth-logo-text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #181818;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.auth-title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: #181818;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 0;
+  position: relative;
+}
+.form-group label {
+  font-size: 0.98rem;
+  color: #181818;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 700;
+  font-family: "Poppins", Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 2px;
+  font-family: "Lato", Arial, sans-serif;
+}
+.form-group input:focus {
+  border-color: #ffd600;
+  outline: none;
+  box-shadow: 0 0 0 2px #ffd60033;
+}
+.show-password-toggle {
+  position: absolute;
+  right: 14px;
+  top: 36px;
+  background: none;
+  border: none;
+  color: #ffd600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+.show-password-toggle:hover {
+  color: #181818;
+}
+.form-options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+.checkbox-label a {
+  color: #ffd600;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+.btn {
+  display: inline-block;
+  background: #ffd600;
+  color: #181818;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 0;
+  font-size: 1.08rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(24, 24, 24, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-block {
+  width: 100%;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:hover {
+  background: #181818;
+  color: #ffd600;
+  box-shadow: 0 4px 16px rgba(24, 24, 24, 0.13);
+}
+.auth-footer {
+  margin-top: 28px;
+  font-size: 0.98rem;
+  padding-bottom: 8px;
+  color: #888;
+}
+.auth-footer a {
+  color: #ffd600;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.auth-footer a:hover {
+  color: #181818;
+}
+@media (max-width: 600px) {
+  .auth-container {
+    flex-direction: column;
+    border-radius: 0 0 18px 18px;
+    min-height: unset;
+  }
+  .auth-accent {
+    width: 100%;
+    height: 8px;
+    min-height: unset;
+    border-radius: 18px 18px 0 0;
+  }
+  .auth-content {
+    padding: 28px 10px 18px 10px;
+  }
+}
