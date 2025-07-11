@@ -190,8 +190,7 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  transition: left var(--transition-normal);
+  color: black;
   z-index: -1;
   border-radius: var(--radius-lg);
 }
@@ -203,9 +202,10 @@ html {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  color: var(--text-white);
+  color: var(--text-black);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-colored);
+  box-shadow: var(pink);
+
 }
 
 .nav-menu li a::after {
@@ -215,9 +215,8 @@ html {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--accent-color);
-  transition: all var(--transition-normal);
-  transform: translateX(-50%);
+  
+
 }
 
 .nav-menu li a:hover::after,
